@@ -9,15 +9,15 @@ function TodosActions({
 }) {
   return (
     <>
-      <Button>
-        <RiRefreshLine onClick={resetTodos} title="Reset" />
+      <Button onClick={resetTodos} title="Reset">
+        <RiRefreshLine />
       </Button>
-      <Button>
-        <RiDeleteBin2Line
-          onClick={deleteCompletedTodos}
-          title="Clear Completed Items"
-          disabled={!completedTodosExist}
-        />
+      <Button
+        onClick={deleteCompletedTodos}
+        title="Clear Completed Items"
+        disabled={!completedTodosExist}
+      >
+        <RiDeleteBin2Line />
       </Button>
     </>
   );
